@@ -1,30 +1,30 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Attribution from "./components/Attribution.vue";
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <main>
+    <section>
+      <h1>Your Result</h1>
+      <div><span>76</span><span>of 100</span></div>
+      <p>Great</p>
+      <p>
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </section>
+    <section>
+      <h2>Summary</h2>
+      <ul>
+        <li>Reaction 80 / 100</li>
+        <li>Memory 92 / 100</li>
+        <li>Verbal 61 / 100</li>
+        <li>Visual 72 / 100</li>
+      </ul>
+      <button>Continue</button>
+    </section>
+  </main>
+
+  <Attribution />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>
