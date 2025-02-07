@@ -1,7 +1,23 @@
 <script>
 import ResultSection from "./ResultSection.vue";
 import DetailsSection from "./DetailsSection.vue";
+
+import resultsJSON from "../data/data.json";
+
 export default {
+  data() {
+    return {
+      results: resultsJSON,
+    };
+  },
+  computed: {
+    average() {
+      return Math.round(
+        this.results.reduce((sum, next) => sum + next.score, 0) /
+          this.results.length
+      );
+    },
+  },
   components: {
     ResultSection,
     DetailsSection,
@@ -11,8 +27,8 @@ export default {
 
 <template>
   <main>
-    <ResultSection />
-    <DetailsSection />
+    <ResultSection :average="average" />
+    <DetailsSection :results="results" />
   </main>
 </template>
 

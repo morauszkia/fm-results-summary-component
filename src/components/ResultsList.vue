@@ -5,14 +5,23 @@ export default {
   components: {
     ResultItem,
   },
+  props: {
+    results: {
+      type: Array,
+      required: true,
+    },
+  },
 };
 </script>
 
 <template>
   <ul>
-    <ResultItem category="Reaction" score="80" />
-    <ResultItem category="Memory" score="92" />
-    <ResultItem category="Verbal" score="61" />
-    <ResultItem category="Visual" score="72" />
+    <ResultItem
+      v-for="result in results"
+      :key="result.category.toLowerCase()"
+      :icon="result.icon"
+      :category="result.category"
+      :score="result.score"
+    />
   </ul>
 </template>
