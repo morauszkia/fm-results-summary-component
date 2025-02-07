@@ -1,14 +1,19 @@
 <template>
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by
     <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
       >Frontend Mentor</a
-    >. Coded by <a href="#">Your Name Here</a>.
-  </div>
+    >. Coded by
+    <a href="https://github.com/morauszkia" target="_blank">mantis</a>.
+  </footer>
 </template>
 
 <style scoped>
 .attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
   font-size: 11px;
   text-align: center;
 }
