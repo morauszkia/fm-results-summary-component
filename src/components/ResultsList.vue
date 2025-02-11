@@ -25,3 +25,12 @@ export default {
     />
   </ul>
 </template>
+
+<style scoped>
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+</style>
