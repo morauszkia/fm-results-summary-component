@@ -7,5 +7,3 @@ import SummaryContainer from "./components/SummaryContainer.vue";
   <SummaryContainer />
   <Attribution />
 </template>
-
-<style scoped></style>

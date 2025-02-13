@@ -46,7 +46,7 @@ p {
   font-weight: 700;
 }
 h1 {
-  font-size: 1.125rem;
+  font-size: var(--fs-md);
 }
 .average--text {
   height: 8.75rem;
@@ -62,27 +62,37 @@ h1 {
 
 .average--value {
   color: #fff;
-  font-size: 3.5rem;
+  font-size: var(--fs-xl);
   font-weight: 800;
   display: block;
 }
 
 .evaluation {
-  font-size: 1.5rem;
+  font-size: var(--fs-lg);
   color: #fff;
   margin-bottom: 0.5rem;
 }
 
 .comparison {
   font-weight: 500;
-  max-width: 16.25rem;
+  max-width: 16rem;
   line-height: 1.31;
+  font-size: var(--fs-sm);
 }
 
 @media screen and (min-width: 50rem) {
   section {
     border-top-right-radius: 2rem;
     padding: 2.375rem 2.875rem 2.875rem 2.875rem;
+  }
+
+  .average--text {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+
+  .evaluation {
+    margin-bottom: 0.875rem;
   }
 }
 </style>

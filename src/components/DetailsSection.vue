@@ -30,12 +30,13 @@ section {
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1.5rem;
   flex: 1 0 50%;
 }
 
 h2 {
-  font-size: 1.125rem;
+  font-size: var(--fs-md);
   color: #303b59;
 }
 

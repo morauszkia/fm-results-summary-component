@@ -45,6 +45,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: var(--fs-sm);
 }
 
 .category {
