@@ -38,6 +38,7 @@ section {
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   text-align: center;
+  flex: 1 0 50%;
 }
 h1,
 p {
@@ -76,5 +77,12 @@ h1 {
   font-weight: 500;
   max-width: 16.25rem;
   line-height: 1.31;
+}
+
+@media screen and (min-width: 50rem) {
+  section {
+    border-top-right-radius: 2rem;
+    padding: 2.375rem 2.875rem 2.875rem 2.875rem;
+  }
 }
 </style>

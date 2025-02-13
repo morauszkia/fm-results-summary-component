@@ -46,4 +46,11 @@ main {
     min-width: 24rem;
   }
 }
+
+@media screen and (min-width: 50rem) {
+  main {
+    display: flex;
+    width: 46rem;
+  }
+}
 </style>

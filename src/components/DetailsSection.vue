@@ -31,6 +31,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  flex: 1 0 50%;
 }
 
 h2 {
@@ -61,5 +62,11 @@ button:focus {
 
 button:active {
   transform: scale(0.95);
+}
+
+@media screen and (min-width: 50rem) {
+  section {
+    padding: 2.375rem 2.875rem 2.875rem 2.875rem;
+  }
 }
 </style>
