@@ -37,4 +37,13 @@ main {
   background-color: #fff;
   min-height: 100dvh;
 }
+
+@media screen and (min-width: 32rem) {
+  main {
+    min-height: unset;
+    border-radius: 2rem;
+    overflow: hidden;
+    min-width: 24rem;
+  }
+}
 </style>

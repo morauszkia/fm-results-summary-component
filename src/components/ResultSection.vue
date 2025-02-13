@@ -37,6 +37,7 @@ section {
   padding-bottom: 2.5rem;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  text-align: center;
 }
 h1,
 p {
