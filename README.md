@@ -44,6 +44,7 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [Vue.js](https://vuejs.org/) - JS framework
+- [Vite](https://vite.dev) - Build Tool
 
 ### What I learned
 
@@ -57,7 +58,7 @@ I am also giving Svelte a try by [building the same components](https://github.c
 
 ### Useful resources
 
-- [Vue docs](https://vuejs.org/guide/introduction.html) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Vue docs](https://vuejs.org/guide/introduction.html)
 - [Vite docs](https://vite.dev/guide/assets.html) - These helped me a lot, especially with static asset handling and deployment.
 
 ## Author
