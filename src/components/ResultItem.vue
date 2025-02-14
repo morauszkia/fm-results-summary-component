@@ -7,7 +7,7 @@ export default {
   },
   methods: {
     getImageUrl(path) {
-      return new URL(path, import.meta.url).href;
+      return new URL(`../assets/images/${path}`, import.meta.url).href;
     },
   },
   computed: {
