@@ -1,17 +1,7 @@
-<script>
+<script setup>
 import ResultsList from "./ResultsList.vue";
 
-export default {
-  components: {
-    ResultsList,
-  },
-  props: {
-    results: {
-      type: Array,
-      required: true,
-    },
-  },
-};
+const { results } = defineProps(["results"]);
 </script>
 
 <template>

@@ -1,12 +1,5 @@
-<script>
-export default {
-  props: {
-    average: {
-      type: Number,
-      required: true,
-    },
-  },
-};
+<script setup>
+const { average } = defineProps(["average"]);
 </script>
 
 <template>

@@ -1,25 +1,18 @@
-<script>
-export default {
-  props: {
-    category: String,
-    score: Number,
-    icon: String,
-  },
-  methods: {
-    getImageUrl(path) {
-      return new URL(`../assets/images/${path}`, import.meta.url).href;
-    },
-  },
-  computed: {
-    class() {
-      return this.category.toLowerCase();
-    },
-  },
-};
+<script setup>
+import { computed } from "vue";
+
+const { result } = defineProps(["result"]);
+
+const { category, icon, score } = result;
+
+const getImageUrl = (path) =>
+  new URL(`../assets/images/${path}`, import.meta.url).href;
+
+const className = computed(() => category.toLowerCase());
 </script>
 
 <template>
-  <li :class="class">
+  <li :class="className">
     <span class="category">
       <img :src="getImageUrl(icon)" :alt="`${category} icon`" />
       {{ category }}

@@ -1,17 +1,7 @@
-<script>
+<script setup>
 import ResultItem from "./ResultItem.vue";
 
-export default {
-  components: {
-    ResultItem,
-  },
-  props: {
-    results: {
-      type: Array,
-      required: true,
-    },
-  },
-};
+const { results } = defineProps(["results"]);
 </script>
 
 <template>
@@ -19,9 +9,7 @@ export default {
     <ResultItem
       v-for="result in results"
       :key="result.category.toLowerCase()"
-      :icon="result.icon"
-      :category="result.category"
-      :score="result.score"
+      :result="result"
     />
   </ul>
 </template>

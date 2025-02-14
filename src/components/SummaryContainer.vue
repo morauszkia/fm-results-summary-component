@@ -1,28 +1,18 @@
-<script>
+<script setup>
+import { ref, computed } from "vue";
+
 import ResultSection from "./ResultSection.vue";
 import DetailsSection from "./DetailsSection.vue";
 
 import resultsJSON from "../data/data.json";
 
-export default {
-  data() {
-    return {
-      results: resultsJSON,
-    };
-  },
-  computed: {
-    average() {
-      return Math.round(
-        this.results.reduce((sum, next) => sum + next.score, 0) /
-          this.results.length
-      );
-    },
-  },
-  components: {
-    ResultSection,
-    DetailsSection,
-  },
-};
+const results = ref(resultsJSON);
+const average = computed(() =>
+  Math.round(
+    results.value.reduce((sum, next) => sum + next.score, 0) /
+      results.value.length
+  )
+);
 </script>
 
 <template>
